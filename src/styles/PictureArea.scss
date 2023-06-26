@@ -1,0 +1,37 @@
+@import './variables';
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.root-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line-div {
+  width: 100%;
+  height: 100%;
+  @include flexCenter();
+}
+
+.line {
+  width: 25%;
+  height: 0.4rem;
+  background-color: $black;
+  border-radius: 1rem;
+}
+
+.picture-div {
+  @include flexCenter();
+  width: 100%;
+  height: 100%;
+  img {
+    width: 40rem;
+  }
+}
