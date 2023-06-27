@@ -1,0 +1,14 @@
+@import './variables';
+
+.portfolio-root-div {
+  width: 100%;
+  height: 100%;
+  @include flexCenter();
+  gap: 1.5rem;
+}
+
+.vertical-line {
+  height: 100%;
+  width: 1rem;
+  background-color: $black;
+}

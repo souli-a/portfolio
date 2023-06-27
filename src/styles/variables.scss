@@ -2,3 +2,14 @@ $black: #161616;
 $white: #f6f6f6;
 $green: #a3ff5b;
 $lightBlack: #4f4f4f;
+
+$grey100: #ececec;
+$grey200: #e0e0e0;
+
+$transition: all 0.12s linear;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
+@import './variables';
 
 :root,
 #root,
 html,
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-size: 62.5%;
   font-family: 'Lexend', sans-serif;
+}
+
+html {
+  border: solid 1.5rem $black;
+  background-color: $black;
+}
+
+body {
+  background-color: $black;
 }
 
 *,
