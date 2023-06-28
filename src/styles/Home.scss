@@ -53,6 +53,30 @@
     width: 5rem;
     border-radius: 0.5rem;
     fill: $black;
+  }
+}
+
+.svg-hover {
+  cursor: crosshair;
+  .title-svg-div {
+    display: none;
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    background-color: $black;
+    padding: 0.3rem 1rem;
+    border-radius: 0.4rem;
+  }
+  h1 {
+    font-size: 2rem;
+    color: $white;
+    font-weight: 600;
+  }
+  &:hover {
     cursor: crosshair;
+    h1,
+    .title-svg-div {
+      display: block;
+    }
   }
 }

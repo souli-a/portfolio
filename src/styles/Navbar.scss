@@ -8,12 +8,15 @@
   width: 100%;
   height: fit-content;
   gap: 1rem;
-  .home-button,
-  .switchMode-button {
-    width: 4rem;
-    height: 4rem;
+  .home-button {
+    width: 3rem;
+    height: 3rem;
     border-radius: 9999rem;
     background-color: $black;
+  }
+  .switchMode-button {
+    fill: $black;
+    width: 5rem;
   }
   button {
     color: $black;

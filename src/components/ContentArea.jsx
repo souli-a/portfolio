@@ -1,13 +1,13 @@
 import '../styles/ContentArea.scss';
 import Navbar from './Navbar';
-import Home from './Home.jsx';
+import Contact from './Contact.jsx';
 
 const ContentArea = () => {
   return (
     <div className="contentArea-root-div">
       <div className="content-div">
         <Navbar />
-        <Home />
+        <Contact />
       </div>
     </div>
   );
