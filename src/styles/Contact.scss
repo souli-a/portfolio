@@ -1,0 +1,77 @@
+@import './variables';
+
+.contact-root-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 1rem;
+  & > h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    span {
+      letter-spacing: 0.2rem;
+      color: $green;
+      font-weight: 700;
+    }
+  }
+}
+
+.copy-email {
+  border: 0.3rem solid $black;
+  border-radius: 0.3rem;
+  background-color: $black;
+}
+
+.email-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: $white;
+  border-radius: 0.1rem;
+  h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+  }
+}
+
+.copy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  max-width: fit-content;
+  height: fit-content;
+  border: 0.3rem solid $black;
+  background-color: $black;
+  svg {
+    fill: $black;
+    background-color: transparent;
+    min-width: 2.8rem;
+    border-radius: 0.1rem;
+    transition: fill 0.1s linear;
+    &.done-icon {
+      fill: $green;
+    }
+  }
+  &:hover {
+    svg:not(.done-icon) {
+      fill: $lightBlack;
+    }
+  }
+  &:active {
+    svg {
+      fill: $green;
+    }
+  }
+}
+
+.copy-button-bg {
+  background-color: $white;
+  padding: 0.4rem;
+  border-radius: 0.1rem;
+}

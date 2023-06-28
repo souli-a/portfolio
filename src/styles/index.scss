@@ -11,6 +11,18 @@ body {
   padding: 0;
   font-size: 62.5%;
   font-family: 'Lexend', sans-serif;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 }
 
 html {

@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  clipboard-copy:
+    specifier: ^4.0.1
+    version: 4.0.1
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -792,6 +795,10 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /clipboard-copy@4.0.1:
+    resolution: {integrity: sha512-wOlqdqziE/NNTUJsfSgXmBMIrYmfd5V0HCGsR8uAKHcg+h9NENWINcfRjtWGU77wDHC8B8ijV4hMTGYbrKovng==}
+    dev: false
 
   /color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
