@@ -1,10 +1,7 @@
 @import './variables';
 
 .contact-root-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flexCenter(column);
   height: 100%;
   gap: 2.5rem;
   & > h1 {
@@ -25,9 +22,7 @@
 }
 
 .email-bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(row);
   gap: 1rem;
   padding: 0.5rem 1rem;
   background-color: $white;
@@ -40,9 +35,7 @@
 }
 
 .copy-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(row);
   border-radius: 0.5rem;
   max-width: fit-content;
   height: fit-content;

@@ -23,3 +23,10 @@ $white600: #aaaaaa;
 $white700: #9d9d9d;
 $white800: #909090;
 $white900: #838383;
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}

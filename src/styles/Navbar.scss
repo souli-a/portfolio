@@ -1,9 +1,7 @@
 @import './variables';
 
 .navbar-root-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter(row);
   flex-wrap: wrap;
   width: 100%;
   height: fit-content;

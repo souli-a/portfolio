@@ -3,10 +3,7 @@
 .pictureArea-root-div {
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  @include flexCenter(column);
   border-radius: 1rem;
   background-color: $white;
   gap: 8rem;
@@ -15,9 +12,7 @@
 }
 
 .picture-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(row);
   img {
     min-width: 15rem;
     width: 40rem;
