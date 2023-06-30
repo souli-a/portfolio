@@ -28,7 +28,6 @@
   padding: 0.5rem 1rem;
   background-color: $white;
   border-radius: 0.3rem;
-  word-break: break-all;
   h1 {
     font-size: 2rem;
     letter-spacing: 0.05rem;
@@ -79,5 +78,33 @@
   }
   .email-bg {
     padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-root-div {
+    & > h1 {
+      font-size: 2.8rem;
+    }
+  }
+  .copy-email {
+    border: 0.3rem solid $black;
+  }
+  .email-bg {
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.3rem;
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
+  .copy-button {
+    @include flexCenter(row);
+    border: 0.3rem solid $black;
+    svg {
+      min-width: 2.5rem;
+    }
+  }
+  .copy-button-bg {
+    padding: 0.15rem;
   }
 }
