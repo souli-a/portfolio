@@ -1,10 +1,11 @@
 import '../styles/Contact.scss';
 import copy from 'clipboard-copy';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 const Contact = () => {
   const textRef = useRef(null);
   const [copied, setCopied] = useState(false);
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
   const handleCopyClick = () => {
     const textToCopy = textRef.current.textContent;
@@ -15,6 +16,16 @@ const Contact = () => {
     }, 800);
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className="contact-root-div">
       <h1>
@@ -22,7 +33,11 @@ const Contact = () => {
       </h1>
       <div className="copy-email">
         <div className="email-bg">
-          <h1 ref={textRef}>soulimane.a@protonmail.com</h1>
+          <h1 ref={textRef}>
+            {viewportWidth < 600
+              ? 'Copier mon email'
+              : 'soulimane.a@protonmail.com'}
+          </h1>
           <button className="copy-button" onClick={handleCopyClick}>
             <div className="copy-button-bg">
               {copied === false ? (

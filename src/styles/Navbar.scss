@@ -6,12 +6,7 @@
   width: 100%;
   height: fit-content;
   gap: 2rem;
-  position: sticky;
   margin-bottom: 3rem;
-  .switchMode-button {
-    fill: $black;
-    width: 5rem;
-  }
   button {
     color: $white500;
     border: none;
@@ -33,7 +28,8 @@
     }
   }
   .projects-button.active,
-  .contact-button.active {
+  .contact-button.active,
+  .home-button.active {
     color: $black;
     background-color: $white100;
     &:hover {
@@ -51,5 +47,23 @@
     &:active {
       background-color: $white300;
     }
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar-root-div {
+    gap: 1rem;
+    button {
+      color: $white500;
+      border: none;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar-root-div {
+    flex-direction: column;
   }
 }

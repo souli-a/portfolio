@@ -1,6 +1,19 @@
 import '../styles/Navbar.scss';
+import { useState, useEffect } from 'react';
 
 const Navbar = ({ setActiveComponent, activeComponent }) => {
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const handleClick = (component) => {
     setActiveComponent(component);
   };
@@ -11,7 +24,7 @@ const Navbar = ({ setActiveComponent, activeComponent }) => {
         className={`home-button ${activeComponent === 'home' ? 'active' : ''}`}
         onClick={() => handleClick('home')}
       >
-        👋
+        {viewportWidth < 480 && activeComponent !== 'home' ? '👋' : 'SALUT'}
       </button>
       <button
         className={`projects-button ${
@@ -19,7 +32,9 @@ const Navbar = ({ setActiveComponent, activeComponent }) => {
         }`}
         onClick={() => handleClick('projects')}
       >
-        PROJETS
+        {viewportWidth < 480 && activeComponent !== 'projects'
+          ? '🚧'
+          : 'PROJETS'}
       </button>
       <button
         className={`contact-button ${
@@ -27,13 +42,10 @@ const Navbar = ({ setActiveComponent, activeComponent }) => {
         }`}
         onClick={() => handleClick('contact')}
       >
-        CONTACT
+        {viewportWidth < 480 && activeComponent !== 'contact'
+          ? '☎️'
+          : 'CONTACT'}
       </button>
-      {/*       <button className="switchMode-button">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-          <path d="M235.54 150.21a104.84 104.84 0 0 1-37 52.91A104 104 0 0 1 32 120a103.09 103.09 0 0 1 20.88-62.52a104.84 104.84 0 0 1 52.91-37a8 8 0 0 1 10 10a88.08 88.08 0 0 0 109.8 109.8a8 8 0 0 1 10 10Z" />
-        </svg>
-      </button> */}
     </div>
   );
 };
