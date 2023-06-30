@@ -1,5 +1,6 @@
 import '../styles/Projects.scss';
-import listifyScreen from '../../public/images/listify-screen.jpg';
+import listify from '../../public/images/listify.png';
+import portfolio from '../../public/images/portfolio.png';
 
 const openLink = (URL) => {
   window.open(`${URL}`, '_blank');
@@ -13,7 +14,7 @@ const Projects = () => {
         onClick={() => openLink('https://github.com/souli-a/todo-app')}
       >
         <div className="left-side-card">
-          <img src={listifyScreen} />
+          <img src={listify} />
         </div>
         <div className="right-side-card">
           <div className="title-card">
@@ -44,7 +45,7 @@ const Projects = () => {
         onClick={() => openLink('https://github.com/souli-a/portfolio')}
       >
         <div className="left-side-card">
-          <img src={listifyScreen} />
+          <img src={portfolio} />
         </div>
         <div className="right-side-card">
           <div className="title-card">
@@ -54,8 +55,7 @@ const Projects = () => {
             </svg>
           </div>
           <div className="description-card">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem,
-            possimus. Ducimus, maxime in.
+            Site personnel (portfolio) réaliser avec React et Sass.
           </div>
           <div className="tag-card-list">
             <div className="tag">React</div>
