@@ -1,15 +1,13 @@
 import '../styles/Contact.scss';
 import copy from 'clipboard-copy';
-import { useRef, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Contact = () => {
-  const textRef = useRef(null);
   const [copied, setCopied] = useState(false);
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
   const handleCopyClick = () => {
-    const textToCopy = textRef.current.textContent;
-    copy(textToCopy);
+    copy('soulimane.a@protonmail.com');
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
@@ -33,7 +31,7 @@ const Contact = () => {
       </h1>
       <div className="copy-email">
         <div className="email-bg">
-          <h1 ref={textRef}>
+          <h1>
             {viewportWidth < 600
               ? 'Copier mon email'
               : 'soulimane.a@protonmail.com'}
