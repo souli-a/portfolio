@@ -14,14 +14,13 @@ const Home = () => {
       const x = position.x - divContent[i].offsetLeft + 15;
       const y = position.y - divContent[i].offsetTop + 15;
       divContent[i].style.transform = `translate(${x}px, ${y}px)`;
-      console.log('2');
     }
   }, [position]);
 
   return (
     <div className="home-root-div">
       <div className="presentation-content">
-        <p>Salut 👋</p>
+        <p>Salut 👋,</p>
         <p>
           Je suis <span>Soulimane</span>,
         </p>

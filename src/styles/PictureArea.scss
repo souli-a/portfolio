@@ -15,7 +15,9 @@
 }
 
 .picture-div {
-  @include flexCenter();
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
     min-width: 15rem;
     width: 40rem;

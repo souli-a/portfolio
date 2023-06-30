@@ -1,10 +1,17 @@
 import '../styles/Projects.scss';
 import listifyScreen from '../../public/images/listify-screen.jpg';
 
+const openLink = (URL) => {
+  window.open(`${URL}`, '_blank');
+};
+
 const Projects = () => {
   return (
     <div className="projects-root-div">
-      <div className="card">
+      <div
+        className="card"
+        onClick={() => openLink('https://github.com/souli-a/todo-app')}
+      >
         <div className="left-side-card">
           <img src={listifyScreen} />
         </div>
@@ -32,7 +39,10 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="card">
+      <div
+        className="card"
+        onClick={() => openLink('https://github.com/souli-a/portfolio')}
+      >
         <div className="left-side-card">
           <img src={listifyScreen} />
         </div>
@@ -50,10 +60,8 @@ const Projects = () => {
           <div className="tag-card-list">
             <div className="tag">React</div>
             <div className="tag">JavaScript</div>
-            <div className="tag">Express</div>
-            <div className="tag">MongoDB</div>
-            <div className="tag">Cypress</div>
-            <div className="tag">styled-components</div>
+            <div className="tag">Sass</div>
+            <div className="tag">Vite</div>
           </div>
         </div>
       </div>

@@ -20,11 +20,11 @@
   transition-duration: 0.12s;
   transition-timing-function: linear;
   &:hover {
-    background-color: $grey50;
-    box-shadow: 0 0 0 0.2rem $grey100;
+    background-color: $white100;
+    box-shadow: 0 0 0 0.2rem $white200;
     border-radius: 0.4rem;
     img {
-      box-shadow: 0 0 0 0.2rem $grey300;
+      box-shadow: 0 0 0 0.2rem $white400;
       border-radius: 0.4rem;
     }
     svg {
@@ -36,6 +36,31 @@
     .title-card {
       svg {
         fill: $blue;
+      }
+    }
+  }
+  &:active {
+    background-color: $white200;
+    box-shadow: 0 0 0 0.2rem $white300;
+    img {
+      box-shadow: 0 0 0 0.2rem $white600;
+    }
+    svg {
+      transform: rotate(-40deg) translateX(1.5rem);
+    }
+    .description-card {
+      color: $black;
+      opacity: 0.7;
+    }
+    .tag {
+      background-color: $blue100;
+    }
+    .title-h1-card {
+      color: $blue100;
+    }
+    .title-card {
+      svg {
+        fill: $blue100;
       }
     }
   }
@@ -85,7 +110,7 @@
 
 .description-card {
   font-size: 1.6rem;
-  color: $lightBlack;
+  color: $black800;
   line-height: 2.5rem;
 }
 

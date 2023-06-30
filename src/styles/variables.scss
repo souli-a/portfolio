@@ -1,18 +1,25 @@
-$black: #161616;
-$white: #f6f6f6;
 $green: #7bef23;
 $blue: #6fa9ff;
-$lightBlack: #4f4f4f;
+$blue100: #5197ff;
 
-$grey50: #f2f2f2;
-$grey100: #ececec;
-$grey200: #e0e0e0;
-$grey300: #cccccc;
+$black: #161616;
+$black100: #242424;
+$black200: #323232;
+$black300: #404040;
+$black400: #4e4e4e;
+$black500: #5c5c5c;
+$black600: #6a6a6a;
+$black700: #787878;
+$black800: #868686;
+$black900: #949494;
 
-$transition: all 0.12s linear;
-
-@mixin flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+$white: #f6f6f6;
+$white100: #ebebeb;
+$white200: #dedede;
+$white300: #d1d1d1;
+$white400: #c4c4c4;
+$white500: #b7b7b7;
+$white600: #aaaaaa;
+$white700: #9d9d9d;
+$white800: #909090;
+$white900: #838383;
