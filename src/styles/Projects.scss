@@ -28,7 +28,7 @@
       border-radius: 0.4rem;
     }
     svg {
-      transform: rotate(-40deg) translateX(1.2rem);
+      transform: rotate(-40deg) translateX(0.6rem);
     }
     .title-h1-card {
       color: $blue;
@@ -46,7 +46,7 @@
       box-shadow: 0 0 0 0.2rem $white600;
     }
     svg {
-      transform: rotate(-40deg) translateX(1.5rem);
+      transform: rotate(-40deg) translateX(0.9rem);
     }
     .description-card {
       color: $black;
@@ -154,6 +154,18 @@
   .card {
     gap: 1rem;
     padding: 1rem;
+    &:hover {
+      svg {
+        transform: rotate(-40deg) translateX(0.55rem);
+      }
+    }
+    &:active {
+      svg {
+        position: fixed;
+        transform: rotate(180deg) translateX(0rem);
+        margin-bottom: 0.2rem;
+      }
+    }
   }
   .title-card {
     display: none;
@@ -164,7 +176,7 @@
   }
   .title-card {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     width: 100%;
     svg {
       width: 2.2rem;
@@ -184,6 +196,7 @@
     font-size: 1.4rem;
     color: $black800;
     line-height: 2.3rem;
+    margin-top: -0.35rem;
   }
   .tag-card-list {
     gap: 0.5rem;

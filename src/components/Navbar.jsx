@@ -24,7 +24,7 @@ const Navbar = ({ setActiveComponent, activeComponent }) => {
         className={`home-button ${activeComponent === 'home' ? 'active' : ''}`}
         onClick={() => handleClick('home')}
       >
-        {viewportWidth < 480 && activeComponent !== 'home' ? '👋' : 'SALUT'}
+        {viewportWidth < 500 && activeComponent !== 'home' ? '👋' : 'SALUT'}
       </button>
       <button
         className={`projects-button ${
@@ -32,7 +32,7 @@ const Navbar = ({ setActiveComponent, activeComponent }) => {
         }`}
         onClick={() => handleClick('projects')}
       >
-        {viewportWidth < 480 && activeComponent !== 'projects'
+        {viewportWidth < 500 && activeComponent !== 'projects'
           ? '🚧'
           : 'PROJETS'}
       </button>
@@ -42,7 +42,7 @@ const Navbar = ({ setActiveComponent, activeComponent }) => {
         }`}
         onClick={() => handleClick('contact')}
       >
-        {viewportWidth < 480 && activeComponent !== 'contact'
+        {viewportWidth < 500 && activeComponent !== 'contact'
           ? '☎️'
           : 'CONTACT'}
       </button>
