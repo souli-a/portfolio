@@ -11,8 +11,8 @@ const Home = () => {
   useEffect(() => {
     const divContent = document.querySelectorAll('.title-svg-div');
     for (let i = 0; i < divContent.length; i++) {
-      const x = position.x - divContent[i].offsetLeft + 15;
-      const y = position.y - divContent[i].offsetTop + 15;
+      const x = position.x - divContent[i].offsetLeft;
+      const y = position.y - divContent[i].offsetTop;
       divContent[i].style.transform = `translate(${x}px, ${y}px)`;
     }
   }, [position]);

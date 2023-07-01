@@ -15,6 +15,11 @@
     width: 100%;
     max-width: 40rem;
     border-radius: 0.5rem;
+    filter: grayscale(1);
+    transition: filter 0.3s linear;
+    &:hover {
+      filter: none;
+    }
   }
 }
 

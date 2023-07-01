@@ -1,0 +1,17 @@
+@import './variables';
+
+* {
+  cursor: none;
+}
+
+.follow-mouse {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  border: 0.4rem solid $black;
+  pointer-events: none;
+  background-color: $blue;
+  opacity: 0.9;
+  z-index: 9999;
+}
