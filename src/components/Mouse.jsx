@@ -32,8 +32,8 @@ const Mouse = () => {
     };
   }, []);
 
-  const x = mousePosition.x - 38;
-  const y = mousePosition.y - 38;
+  const x = mousePosition.x - 30;
+  const y = mousePosition.y - 30;
 
   return (
     <div
