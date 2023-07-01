@@ -30,3 +30,14 @@
     padding: 6rem 4rem;
   }
 }
+
+@media (max-width: 400px) {
+  .pictureArea-root-div {
+    padding: 2rem;
+  }
+  .picture-div {
+    img {
+      max-width: 25rem;
+    }
+  }
+}

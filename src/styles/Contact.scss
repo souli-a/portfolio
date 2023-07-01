@@ -81,27 +81,28 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 400px) {
   .contact-root-div {
+    margin-top: 2rem;
     & > h1 {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
     }
   }
   .copy-email {
     border: 0.3rem solid $black;
   }
   .email-bg {
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.3rem;
     h1 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
   }
   .copy-button {
     @include flexCenter(row);
     border: 0.3rem solid $black;
     svg {
-      min-width: 2.5rem;
+      min-width: 2.2rem;
     }
   }
   .copy-button-bg {

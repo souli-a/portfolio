@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem;
+  padding: 1rem;
   overflow: scroll;
 }
 
@@ -147,8 +147,50 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
+  .projects-root-div {
+    gap: 1rem;
+  }
+  .card {
+    gap: 1rem;
+    padding: 1rem;
+  }
   .title-card {
     display: none;
+  }
+  .projects-root-div {
+    padding: 1.5rem 0 0 0;
+    overflow: initial;
+  }
+  .title-card {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    svg {
+      width: 2.2rem;
+      min-width: 2.2rem;
+      fill: $black;
+      margin-top: 0.4rem;
+      transform: rotate(-40deg);
+      transition-property: transform, fill;
+      transition-duration: 0.12s;
+      transition-timing-function: linear;
+    }
+  }
+  .title-h1-card {
+    font-size: 1.8rem;
+  }
+  .description-card {
+    font-size: 1.4rem;
+    color: $black800;
+    line-height: 2.3rem;
+  }
+  .tag-card-list {
+    gap: 0.5rem;
+    margin-top: 0rem;
+  }
+  .tag {
+    padding: 0.3rem 0.7rem;
+    font-size: 1.3rem;
   }
 }

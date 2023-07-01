@@ -14,3 +14,9 @@
   flex-direction: column;
   padding: 4rem 3rem 6rem 3rem;
 }
+
+@media (max-width: 400px) {
+  .content-div {
+    padding: 2rem;
+  }
+}
