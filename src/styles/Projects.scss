@@ -161,9 +161,7 @@
     }
     &:active {
       svg {
-        position: fixed;
         transform: rotate(180deg) translateX(0rem);
-        margin-bottom: 0.2rem;
       }
     }
   }
