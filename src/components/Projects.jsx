@@ -33,10 +33,14 @@ const Projects = () => {
           <div className="tag-card-list">
             <div className="tag">React</div>
             <div className="tag">JavaScript</div>
+            <div className="tag">styled-components</div>
+            <div className="tag">Figma</div>
+            <div className="tag">Git</div>
+            <div className="tag">GitHub</div>
+            <div className="tag">Cypress</div>
             <div className="tag">Express</div>
             <div className="tag">MongoDB</div>
-            <div className="tag">Cypress</div>
-            <div className="tag">styled-components</div>
+            <div className="tag">Vite</div>
           </div>
         </div>
       </div>
@@ -55,12 +59,17 @@ const Projects = () => {
             </svg>
           </div>
           <div className="description-card">
-            Site personnel (portfolio) réaliser avec React et Sass.
+            Site personnel présentant mes projets, les technologies que
+            j'utilise et une page pour me contacter. Portfolio réalisé avec
+            React et Sass.
           </div>
           <div className="tag-card-list">
             <div className="tag">React</div>
             <div className="tag">JavaScript</div>
             <div className="tag">Sass</div>
+            <div className="tag">Figma</div>
+            <div className="tag">Git</div>
+            <div className="tag">GitHub</div>
             <div className="tag">Vite</div>
           </div>
         </div>
