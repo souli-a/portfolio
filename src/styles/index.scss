@@ -11,12 +11,22 @@ body {
   padding: 0;
   font-size: 62.5%;
   font-family: 'Lexend', sans-serif;
-  overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
+  width: 2rem;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 5rem;
+  border-radius: 0.8rem;
+  border: 0.4rem solid transparent;
+  background-clip: content-box;
+  background-color: $white400;
 }
 
 button {
@@ -76,4 +86,11 @@ h6 {
 
 #root {
   isolation: isolate;
+}
+
+@media (max-width: 1250px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
 }
