@@ -11,3 +11,9 @@
   opacity: 0.9;
   z-index: 9999;
 }
+
+@media (max-width: 1250px) {
+  .follow-mouse {
+    display: none;
+  }
+}
