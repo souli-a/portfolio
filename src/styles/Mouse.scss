@@ -8,14 +8,8 @@
   border: 0.4rem solid $black;
   pointer-events: none;
   background-color: $blue;
-  opacity: 0.9;
+  display: none;
   z-index: 9999;
-  top: 0rem;
-  left: 0rem;
-}
-
-@media (max-width: 1250px) {
-  .follow-mouse {
-    display: none;
-  }
+  top: -1rem;
+  left: -1rem;
 }

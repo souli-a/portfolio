@@ -6,14 +6,18 @@ const Mouse = () => {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
   useEffect(() => {
+    const cursorDiv = document.querySelector('.follow-mouse');
     const html = document.querySelector('html');
+
     if (viewportWidth < 600) {
       html.style.cursor = 'initial';
+      cursorDiv.style.display = 'none';
     } else {
       html.style.cursor = 'none';
       const handleMouseMove = (e) => {
         const { clientX, clientY } = e;
         setMousePosition({ x: clientX, y: clientY });
+        cursorDiv.style.display = 'initial';
       };
       document.addEventListener('mousemove', handleMouseMove);
       return () => {
@@ -32,8 +36,8 @@ const Mouse = () => {
     };
   }, []);
 
-  const x = mousePosition.x - 30;
-  const y = mousePosition.y - 30;
+  const x = mousePosition.x - 5;
+  const y = mousePosition.y - 5;
 
   return (
     <div
