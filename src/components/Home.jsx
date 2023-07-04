@@ -25,7 +25,7 @@ const Home = () => {
           Je suis <span>Soulimane</span>,
         </p>
         <p>
-          Développeur <span>front-end</span>.
+          Développeur <span>Front-End</span>.
         </p>
       </div>
       <div className="icons-div">
