@@ -35,13 +35,10 @@ const Projects = () => {
             <div className="tag">React</div>
             <div className="tag">JavaScript</div>
             <div className="tag">styled-components</div>
-            <div className="tag">Figma</div>
-            <div className="tag">Git</div>
-            <div className="tag">GitHub</div>
-            <div className="tag">Cypress</div>
             <div className="tag">Express</div>
             <div className="tag">MongoDB</div>
-            <div className="tag">Vite</div>
+            <div className="tag">Cypress</div>
+            <div className="tag">Figma</div>
           </div>
         </div>
       </div>
@@ -68,9 +65,6 @@ const Projects = () => {
             <div className="tag">JavaScript</div>
             <div className="tag">Sass</div>
             <div className="tag">Figma</div>
-            <div className="tag">Git</div>
-            <div className="tag">GitHub</div>
-            <div className="tag">Vite</div>
           </div>
         </div>
       </div>
@@ -96,7 +90,6 @@ const Projects = () => {
             <div className="tag">Linux</div>
             <div className="tag">Bash</div>
             <div className="tag">Zsh</div>
-            <div className="tag">Arch</div>
           </div>
         </div>
       </div>
