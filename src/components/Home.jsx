@@ -20,17 +20,17 @@ const Home = () => {
   return (
     <div className="home-root-div">
       <div className="presentation-content">
-        <p>Salut 👋,</p>
+        <p>Salut 👋</p>
         <p>
-          Je suis <span>Soulimane</span>,
+          Je suis <span>Soulimane</span>
         </p>
         <p>
-          Développeur <span>Front-End</span>.
+          Développeur <span>Front-End</span>
         </p>
       </div>
       <div className="icons-div">
         <p>
-          Mes <span>technologies</span>.
+          Mes <span>technologies</span>
         </p>
         <div className="list-icons-1">
           <div className="svg-hover" onMouseMove={handleMouseMove}>
