@@ -7,17 +7,20 @@ const Mouse = () => {
 
   useEffect(() => {
     const cursorDiv = document.querySelector('.follow-mouse');
+    const secondCursorDiv = document.querySelector('.second-follow-mouse');
     const html = document.querySelector('html');
 
     if (viewportWidth < 600) {
       html.style.cursor = 'initial';
       cursorDiv.style.display = 'none';
+      secondCursorDiv.style.display = 'none';
     } else {
       html.style.cursor = 'none';
       const handleMouseMove = (e) => {
         const { clientX, clientY } = e;
         setMousePosition({ x: clientX, y: clientY });
         cursorDiv.style.display = 'initial';
+        secondCursorDiv.style.display = 'initial';
       };
       document.addEventListener('mousemove', handleMouseMove);
       return () => {
@@ -40,12 +43,20 @@ const Mouse = () => {
   const y = mousePosition.y - 5;
 
   return (
-    <div
-      style={{
-        transform: `translate(${x}px, ${y}px)`,
-      }}
-      className="follow-mouse"
-    ></div>
+    <>
+      <div
+        style={{
+          transform: `translate(${x}px, ${y}px)`,
+        }}
+        className="follow-mouse"
+      ></div>
+      <div
+        className="second-follow-mouse"
+        style={{
+          transform: `translate(${x}px, ${y}px)`,
+        }}
+      ></div>
+    </>
   );
 };
 

@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  atropos:
+    specifier: ^2.0.2
+    version: 2.0.2
   clipboard-copy:
     specifier: ^4.0.1
     version: 4.0.1
@@ -736,6 +739,11 @@ packages:
       es-shim-unscopables: 1.0.0
       get-intrinsic: 1.2.1
     dev: true
+
+  /atropos@2.0.2:
+    resolution: {integrity: sha512-8f0u0hEOlBTWTSvzY17TcHuQjxUIpkTBq70/I4+UF5B43ORtOoRjm8TPBYEgLM8Ba9AWf6PDtkagbYoybdjaKg==}
+    engines: {node: '>= 12.0.0'}
+    dev: false
 
   /available-typed-arrays@1.0.5:
     resolution: {integrity: sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==}

@@ -1,7 +1,6 @@
 import '../styles/Projects.scss';
 import listify from '../../public/images/listify.png';
 import portfolio from '../../public/images/portfolio.png';
-import linux from '../../public/images/linux.png';
 
 const openLink = (URL) => {
   window.open(`${URL}`, '_blank');
