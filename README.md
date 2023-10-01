@@ -8,7 +8,7 @@ It uses the [`pnpm`](https://pnpm.io) package manager by default, but can also b
 
 ## 1. Fork or clone
 
-[Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) or [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this project from GitHub to get your own copy of it.
+[Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) or [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this project from GitHub to get your own copy of it.
 
 ## 2. Installation
 
