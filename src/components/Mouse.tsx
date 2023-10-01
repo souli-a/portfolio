@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react';
-import '../styles/Mouse.scss';
+import '../styles/mouse.scss';
 
 const Mouse = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const cursorDiv = document.querySelector('.follow-mouse');
-    const secondCursorDiv = document.querySelector('.second-follow-mouse');
-    const html = document.querySelector('html');
+    const cursorDiv = document.querySelector('.follow-mouse') as HTMLDivElement;
+    const secondCursorDiv = document.querySelector(
+      '.second-follow-mouse'
+    ) as HTMLDivElement;
+    const html = document.querySelector('html') as HTMLHtmlElement;
 
     if (viewportWidth < 600) {
       html.style.cursor = 'initial';
@@ -16,7 +18,7 @@ const Mouse = () => {
       secondCursorDiv.style.display = 'none';
     } else {
       html.style.cursor = 'none';
-      const handleMouseMove = (e) => {
+      const handleMouseMove = (e: MouseEvent) => {
         const { clientX, clientY } = e;
         setMousePosition({ x: clientX, y: clientY });
         cursorDiv.style.display = 'initial';

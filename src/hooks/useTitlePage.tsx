@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
 
-const useTitlePage = ({ title }) => {
+interface PropsUseTitlePage {
+  title: string;
+}
+
+const useTitlePage = ({ title }: PropsUseTitlePage) => {
   useEffect(() => {
     if (!title) {
       window.document.title = 'Portfolio';

@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import '../styles/ContentArea.scss';
 import Navbar from './Navbar';
 import Projects from './Projects';
 import Home from './Home';
 import Contact from './Contact';
+import '../styles/content-area.scss';
 
 const ContentArea = () => {
   const [activeComponent, setActiveComponent] = useState(() => {

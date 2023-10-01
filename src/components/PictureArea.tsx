@@ -1,13 +1,14 @@
-import '../styles/PictureArea.scss';
-import picture from '../../public/images/picture-as-a-kid.png';
+import avatar from '/images/avatar.png';
 import Atropos from 'atropos/react';
+import '../styles/picture-area.scss';
+
 const PictureArea = () => {
   return (
-    <div className="pictureArea-root-div">
+    <div className="picture-area-root-div">
       <div className="line" />
       <div className="picture-div">
         <Atropos className="my-atropos" highlight={false} shadow={false}>
-          <img src={picture} />
+          <img src={avatar} />
         </Atropos>
       </div>
       <div className="line" />

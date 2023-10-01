@@ -2,12 +2,22 @@
 @import './variables';
 @import 'atropos/scss';
 
+html {
+  min-height: 100%;
+  display: flex;
+}
+
+body,
+#root,
+.portfolio-root-div {
+  display: flex;
+  flex-grow: 1;
+}
+
 :root,
 #root,
 html,
 body {
-  height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
   font-size: 62.5%;

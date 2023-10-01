@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Portfolio from './pages/Portfolio';
-import './styles/index.scss';
+import Portfolio from './Portfolio';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import '../styles/index.scss';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>

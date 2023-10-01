@@ -1,7 +1,7 @@
 @import './variables';
 
 .navbar-root-div {
-  @include flexCenter(row);
+  @include flex-center(row);
   flex-wrap: wrap;
   width: 100%;
   height: fit-content;

@@ -1,7 +1,7 @@
 @import './variables';
 
-.pictureArea-root-div {
-  @include flexCenter(column);
+.picture-area-root-div {
+  @include flex-center(column);
   width: 100%;
   border-radius: 1rem;
   background-color: $white;
@@ -31,13 +31,13 @@
 }
 
 @media (max-width: 1250px) {
-  .pictureArea-root-div {
+  .picture-area-root-div {
     padding: 6rem 4rem;
   }
 }
 
 @media (max-width: 400px) {
-  .pictureArea-root-div {
+  .picture-area-root-div {
     padding: 2rem;
   }
   .picture-div {

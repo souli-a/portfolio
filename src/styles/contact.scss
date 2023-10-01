@@ -1,7 +1,7 @@
 @import './variables';
 
 .contact-root-div {
-  @include flexCenter(column);
+  @include flex-center(column);
   height: 100%;
   gap: 2.5rem;
   & > h1 {
@@ -22,7 +22,7 @@
 }
 
 .email-bg {
-  @include flexCenter(row);
+  @include flex-center(row);
   flex-wrap: wrap;
   gap: 1rem;
   padding: 0.5rem 1rem;
@@ -37,7 +37,7 @@
 }
 
 .copy-button {
-  @include flexCenter(row);
+  @include flex-center(row);
   border-radius: 0.5rem;
   max-width: fit-content;
   height: fit-content;
@@ -73,7 +73,7 @@
 @media (max-width: 600px) {
   .contact-root-div {
     & > h1 {
-      @include flexCenter(column);
+      @include flex-center(column);
     }
   }
   .email-bg {
@@ -99,7 +99,7 @@
     }
   }
   .copy-button {
-    @include flexCenter(row);
+    @include flex-center(row);
     border: 0.3rem solid $black;
     svg {
       min-width: 2.2rem;
