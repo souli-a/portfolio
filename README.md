@@ -1,6 +1,6 @@
 # Portfolio template
 
-This is a portfolio template for developers. Built with, with [`React`](https://react.dev), [`TypeScript`](https://www.typescriptlang.org), [`HTML`](https://developer.mozilla.org/en-US/docs/Web/HTML), [`Sass`](https://sass-lang.com) and [`Vite`](https://vitejs.dev).
+This is a portfolio template for developers. Built with [`React`](https://react.dev), [`TypeScript`](https://www.typescriptlang.org), [`HTML`](https://developer.mozilla.org/en-US/docs/Web/HTML), [`Sass`](https://sass-lang.com) and [`Vite`](https://vitejs.dev).
 
 It uses the [`pnpm`](https://pnpm.io) package manager by default, but can also be used with [`npm`](https://www.npmjs.com) or [`yarn`](https://yarnpkg.com).
 
